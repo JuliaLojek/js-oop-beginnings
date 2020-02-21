@@ -11,6 +11,7 @@ function Card(name){
     newBox.innerHTML = '<p>' + this.name + '</p>' + '<p>' + this.power + '</p>';
     newBox.onclick = () => {
         this.printName.call(this);
+        console.log(this);
     };
     cardBox.appendChild(newBox);
 }

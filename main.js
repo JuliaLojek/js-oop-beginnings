@@ -129,7 +129,7 @@ showValuesAla('hej');
 function createNew(constructor, ...args){
     const newPerson = {};
     Object.setPrototypeOf(newPerson, constructor.prototype);
-    Person.call(newPerson, ...args);
+    constructor.call(newPerson, ...args);
     return newPerson;
 }
 
